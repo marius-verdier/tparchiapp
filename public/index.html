@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site de dépôt de messages</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="container">
+    <header class="banner">
+      <h1>Dépôt de messages</h1>
+      <p>Partagez vos messages avec un pseudo et une date.</p>
+    </header>
+
+    <section class="controls">
+      <button id="themeBtn" type="button">Changer de style</button>
+      <button id="refreshBtn" type="button">Mise à jour</button>
+    </section>
+
+    <section class="messages-section">
+      <h2>Messages</h2>
+      <ul id="messageList"></ul>
+    </section>
+
+    <section class="form-section">
+      <h2>Poster un message</h2>
+
+      <label for="pseudo">Pseudo</label>
+      <input type="text" id="pseudo" name="pseudo" placeholder="Votre pseudo">
+
+      <label for="messageInput">Message</label>
+      <textarea id="messageInput" name="messageInput" rows="5" placeholder="Écrivez votre message ici..."></textarea>
+
+      <button id="sendBtn" type="button">Envoyer</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
